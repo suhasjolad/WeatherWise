@@ -158,7 +158,7 @@ const WeatherCard = (props) => {
                 </div>
                 <div className="bottom">
                     <div className="feels">
-                        <h3>Feels Like</h3>
+                        <h3>FEELS LIKE</h3>
                         <p>{data.feel === 0 ? "NA" : data.feel}&deg;C</p>
                     </div>
                     <div className="humidity">
