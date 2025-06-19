@@ -1,0 +1,96 @@
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.weather-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.top, .bottom {
+    padding: 20px;
+}
+
+.temperature h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.location p {
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    background: rgba(220, 220, 220, 0.5);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.bottom > div {
+    background: rgba(220, 220, 220, 0.6);
+    border-radius: 20px;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.08);
+}
+
+.bottom h3 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: #000;
+}
+
+.bottom p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.suggestion {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion p {
+    font-style: italic;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-icon {
+    font-size: 4rem;
+    animation: bounce 2s infinite;
+} 

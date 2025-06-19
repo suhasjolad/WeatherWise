@@ -1,0 +1,43 @@
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 0.2rem;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Optional: Add hover and focus effects */
+  .search-button:hover,
+  .search-button:focus {
+    background-color: #0056b3;
+  }
+  
+  .search{
+    padding-top: 2rem;
+  }
+
+  /* Small-Mobile Devices */
+@media screen and (max-width:479px){
+  .search{
+    margin-left: 5rem;
+  }
+  
+}

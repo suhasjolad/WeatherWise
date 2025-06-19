@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-y:hidden ;
+    overflow-x: hidden;
+    max-height: 100vh;
+    /* background: url('../src/asset/asset1.jpg') no-repeat center center/cover;  */
+    background-image: url('../src/asset/asset1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+p{
+    font-size: 1.3rem;
+}
+h1{
+    font-size: 6rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    max-width: 70%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 1rem 1rem;
+    position: relative;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.app{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: white;
+
+}
+/* .app:before{
+    content: "";
+    background: url('../src/asset/asset1.jpg') no-repeat center center/cover; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+} */
+
+
+
+
+/* Navbar */
+.top .description{
+    padding-top: 3rem;
+    position: relative;
+    width: 100%;
+    right:-95%;
+    transform-origin: 0 0;
+    transform: rotate(269deg);
+}
+
+.top input{
+    width: 50%;
+    height: 40px;
+    position: relative;
+    background-color: rgb(206, 198, 198);
+    border-radius: 20% 20%;
+    margin-bottom: 5%;
+}
+.my-2{
+    margin-top: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-around;
+    border: 2px solid black;
+    margin-bottom: 10%;
+    padding: 2rem;
+    background-color: gainsboro;
+}
+.temperature img{
+    width:9vw;
+    height:8vw;
+}
+.temperature{
+    justify-content: space-between;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:991px){
+
+}
+
+/* Big Screen Mobiles */
+@media screen and (max-width:767px) {
+
+
+}
+
+/* Small-Mobile Devices */
+@media screen and (max-width:479px){
+    .app{
+        width: 10%;
+        height: 100%;
+        background: url('../src/asset/asset1.jpg') no-repeat center center/cover; 
+    }
+    .top{
+        margin-top: 10rem;
+        margin-left:5rem;
+        
+    }
+    .bottom{
+        min-width: 25rem;
+        margin-bottom: 5rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    .temperature img{
+        margin-left: 1.2rem;
+        width:20vw;
+        height:15vw;
+    }
+    .temperature{
+        justify-content: space-between;
+    }
+    .top .description{
+        display: none ;
+    }
+    
+    
+}
